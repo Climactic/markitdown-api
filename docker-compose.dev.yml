@@ -1,0 +1,18 @@
+services:
+  markitdown-api:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - API_KEY=test_api_key_123456789
+      - OPENAI_API_KEY=test_openai_api_key_123456789
+      - OPENAI_API_BASE=https://api.openai.com/v1
+      - OPENAI_MODEL=gpt-4o-mini
+      - ALLOWED_ORIGINS=*
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s

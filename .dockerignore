@@ -1,0 +1,32 @@
+# Git files
+.git
+.gitignore
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Temporary files
+tmp/
+
+# Developer tools
+.idea/
+.vscode/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Docs
+README.md
+LICENSE
