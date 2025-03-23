@@ -10,6 +10,7 @@ services:
       - OPENAI_API_BASE=${OPENAI_API_BASE}
       - OPENAI_MODEL=${OPENAI_MODEL}
       - ALLOWED_ORIGINS=${ALLOWED_ORIGINS:-*}
+      - DOCS_ENABLED=${DOCS_ENABLED:-false}
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s

@@ -22,6 +22,7 @@
 | OPENAI_API_BASE         | Base URL for OpenAI API (optional)           |
 | OPENAI_API_KEY          | Your OpenAI API key (optional)               |
 | OPENAI_MODEL            | The model to use for OpenAI API (optional)   |
+| DOCS_ENABLED            | Enable Swagger/ReDoc docs (default: true)        |
 
 Copy .env.example to .env and set your values if you're doing this locally.
 
@@ -115,4 +116,4 @@ You can sponsor us on [GitHub Sponsors](https://github.com/sponsors/climactic).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for details.

@@ -10,6 +10,7 @@ services:
       - OPENAI_API_BASE=https://api.openai.com/v1
       - OPENAI_MODEL=gpt-4o-mini
       - ALLOWED_ORIGINS=*
+      - DOCS_ENABLED=true
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s

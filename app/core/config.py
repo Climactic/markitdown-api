@@ -8,6 +8,9 @@ load_dotenv()
 class Settings(BaseSettings):
     ALLOWED_ORIGINS: str = os.getenv("ALLOWED_ORIGINS", "")
     
+    # API Documentation
+    DOCS_ENABLED: bool = os.getenv("DOCS_ENABLED", "true").lower() in ("1", "true", "yes")
+    
     # API Authentication
     API_KEY: str = os.getenv("API_KEY", "")
 
